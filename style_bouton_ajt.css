@@ -1,0 +1,28 @@
+label
+{
+	color: yellow;
+}
+
+h1
+{
+	color:yellow;
+}
+h3
+{
+	color:yellow;
+}
+button
+{
+	width: 150px;
+	border: 2px solid yellow;
+	border-radius: 25px;
+	background-color: yellow;
+	padding: 15px 32px;
+	margin-top: 3px;
+}
+button:hover
+{
+	color: darkblue;
+	background-color: yellow;
+	border:2px solid yellow;
+}
