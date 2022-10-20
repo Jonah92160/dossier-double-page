@@ -1,0 +1,28 @@
+.b1{
+	margin-left: 30%;
+	margin-right: 30%;
+	padding: 1em;
+ 	border: 5px ridge red;
+	border-color: red;
+}
+.b2{
+	padding: 1em;
+ 	border: 5px ridge blue;
+	border-color: blue;
+}
+.b3{
+	padding: 1em;
+ 	border: 1px ridge red;
+	border-color: red;
+}
+.a1{
+font-weight: bold;
+}
+.a2{
+	height: 10px;
+}
+
+img{
+	position: relative;
+	left: 60%
+}
