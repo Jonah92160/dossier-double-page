@@ -91,6 +91,10 @@ nav li:hover .submenu{
 	border-top: 5px solid #f1dc4f;
 	background-color: rgba(241, 211, 79, 0.15);
 }
+.menu-conception:hover{
+	border-top: 5px solid #f1dc4f;
+	background-color: rgba(241, 211, 79, 0.15);
+}
 .menu-contact:hover{
 	border-top: 5px solid#BBB;
 	background-color: rgba(220, 220, 220, 0.15);
@@ -108,10 +112,13 @@ nav > ul < li:hover a{
 .menu-html .submenu{
 	background-color: rgb(230, 100,40);
 }
-.menu-php .submenu{
+.menu-PHP .submenu{
 	background-color: rgb(000, 115, 200);
 }
 .menu-js .submenu{
+	background-color: rgba(251, 216, 99);
+}
+.menu-conception .submenu{
 	background-color: rgba(251, 216, 99);
 }
 
@@ -136,6 +143,9 @@ nav > ul < li:hover a{
 .menu-js .submenu li:hover{
 	background-color: rgb(200, 165, 75);
 }
+.menu-conception .submenu li:hover{
+	background-color: rgb(200, 165, 75);
+}
 .mission .submenu li:hover{
 	background-color: rgb(200, 165, 75);
 }
@@ -151,4 +161,3 @@ nav input[type=checkbox]{
 nav input[type=checkbox]:checked - ul{
 	display: block;
 }
-
