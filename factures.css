@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(79, 168, 168);
+}
+
+header.bann{
+    background-color: rgb(6, 70, 70);
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: column;
+}
+
+img.photo-tete{
+    width: 4.4%;
+    height: 10%;
+    position: absolute;
+    left: 1%;
+    top: 4%;
+}
+div.pos{
+    position: absolute;
+    left: 4.5%;
+}
+h1.facture-txt{
+    color:grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    }
+h1.enhautadroite{
+    left: 910%;
+    top: 1%;
+}
+
+h1.date{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    left: 98rem;
+    top: 6rem;
+}
+section.txt-header{
+    position: absolute;
+    left: 7rem;
+    top: 1%;
+}
+
+nav.container{
+
+}
+.textall{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div.side{
+    background-color: rgb(79, 168, 168);
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        position: relative;
+
+}
+section.right{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    
+}
+hr.taille{
+    width: 52rem;
+}
+section.left{
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.pos-side-text{
+    position: absolute;
+    left: 4%;
+}
+.pos-side-text-h{
+    position: absolute;
+    left: 4%;
+}
+.pos-side-text-hr{
+    position: absolute;
+    left: 0%;
+}

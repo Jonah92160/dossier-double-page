@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Factures Jonah Wong</title>
+        <link rel="stylesheet" href="factures.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    </head>
+<body>
+<nav class="container">
+<header class="bann">
+            <img src="photo-tete.jfif" class="photo-tete">
+<section class="txt-header">   
+        <h1 class="textall">Nom de la compagnie</h5>
+        <h2 class="textall">Adresse postale</h1>    
+        <p class="textall">Details du Contact</p>
+
+        <h1 class="facture-txt enhautadroite">FACTURE</h1>  
+        <h1 class="date">31/01/2023</h1>
+
+</section>
+</header>
+<div class="side">
+<section class="left">
+<h1 class="side-txt pos-side-text textall">Destinataire</h1>
+<h4 class="pos-side-text-h"><br><hr class="taille"> 
+    <input type="text" name="nom" placeholder="Nom" class="textall"> <br><br>
+    <input type="text" name="nomsociete" placeholder="Nom de la Société" class="textall"><br><br>
+    <input type="text" name="adresse" placeholder="Adresse postale" class="textall"><br><br>
+    <input type="text" name="telephone" placeholder="Téléphone" class="textall"><br><br>
+    <input type="text" name="email" placeholder="Email" class="textall"><br><br>
+    </h4>
+<section class="right">
+    <h1 class="side-txt textall">Envoyez à</h1>
+<h4 class="pos-side-text-hr"><br><hr class="taille"> 
+    <input type="text" name="nom" placeholder="Nom" class="textall"><br><br>
+    <input type="text" name="nomsociete" placeholder="Nom de la Société" class="textall"><br><br>
+    <input type="text" name="adresse" placeholder="Adresse postale" class="textall"><br><br>
+    <input type="text" name="telephone" placeholder="Téléphone" class="textall"><br><br>
+    <input type="text" name="email" placeholder="Email" class="textall"></h4>
+</section>
+</section>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="pos">
+<table id="table-calcul">
+    <tr>
+      <td class="textall"> DESCRIPTION</td>
+      <td class="textall">QUANTITE</td>
+      <td class="textall">PRIX UNITAIRE</td>
+      <td class="textall">TOTAL</td>
+    </tr>
+    <tr id="frstLigne">
+      <td><input type="text" name="desc"  placeholder="Description" class="textall"></td>
+      <td><input type="text" name="qte"   value="0" class="textall"></td>
+      <td><input type="text" name="prix"  value="0" class="textall"></td>
+      <td><input type="text" name="total" value="0" readonly="readonly" class="textall"></td>
+    </tr>
+    <tr id="frstLigne">
+      <td><input type="text" name="desc"  placeholder="Description" class="textall"></td>
+      <td><input type="text" name="qte"   value="0" class="textall"></td>
+      <td><input type="text" name="prix"  value="0" class="textall"></td>
+      <td><input type="text" name="total" value="0" readonly="readonly" class="textall"></td>
+    </tr>
+    <tr id="frstLigne">
+      <td><input type="text" name="desc"  placeholder="Description" class="textall"></td>
+      <td><input type="text" name="qte"   value="0" class="textall"></td>
+      <td><input type="text" name="prix"  value="0" class="textall"></td>
+      <td><input type="text" name="total" value="0" readonly="readonly" class="textall"></td>
+    </tr>
+    <tr id="lastLigne">
+      <td><input type="text" name="desc"  placeholder="Description" class="textall"></td>
+      <td><input type="text" name="qte"   value="0" class="textall"></td>
+      <td><input type="text" name="prix"  value="0" class="textall"></td>
+      <td><input type="text" name="total" value="0" readonly="readonly" class="textall"></td>
+    </tr>
+  </table>
+
+
+    <input class="textall" type="text" name="Remarquer" placeholder="Remarques, notes et instructions de paiement">
+<br>
+<br>
+<br>
+<br>
+<br>
+    <table>
+
+      <tr>
+          <td class="textall"> Sous-total</td>
+          <td><input type="text" name="soustotal" id="soustotal" class="textall"></td>
+        </tr>
+      <tr>
+        <td class="textall">Remises</td>
+        <td><input type="text" name="remise" id="remise" value="10.00" class="textall"></td>
+      </tr>
+      <tr>
+        <td class="textall">Sous-total déduisant des remises</td>
+        <td><input type="text" name="sremise" id="sremise" class="textall"></td>
+      </tr>
+      <tr>
+        <td class="textall">Taux D'impos</td>
+        <td><input type="text" name="tauximpo" id="tauximpo" value="10.00%" class="textall"></td>
+      </tr>
+      <tr>
+        <td class="textall">Taxe Total</td>
+        <td><input type="text" name="taxetotal" id="taxetotal" class="textall"></td>
+      </tr>
+      <tr>
+        <td class="textall">Expedition et Manutention</td>
+        <td><input type="text" name="expi" id="expi" value="5.00" class="textall"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="textall">Solde de </td>
+        <td><input type="text" class="totaldu" name="prixfinal" id="prixfinal" class="textall"></td>
+      </tr>
+    </table>
+    
+      <button onclick="calculate()" class="textall">Calculer</bouton>
+      <button onclick="add()" class="textall">Ajouter une ligne</bouton>
+      <button onclick="suppr()" class="textall">Supprimer une ligne</bouton>
+      <button onclick="remplir(); remplirNombres();" class="textall">Remplir automatiquement</button>
+      <button onclick="annuler()" class="textall">Annuler</bouton>
+      </div>
+<footer>
+
+</footer>
+</nav>
+<script src="factures-js.js"></script>
+</body>
+</html>
